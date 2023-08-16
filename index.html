@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Study</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Welcome user
+        let name = prompt("Enter your name");
+        alert(`Good Morning ${name}, and Welcome to Ajcity Bank
+        Enter to continue!`);
+
+        //Wat do u want to do 
+        let action = +prompt(`What would you love to do today?
+        Please enter just number: 
+        1. Transfer
+        2. Buy Airtime
+        3. Buy Data
+        4. Access Loan
+        5. Enquiry
+        6. Self Service`);
+
+        // transfer Option
+        if(action == 1) {
+            +prompt(`Select Bank
+            1. Fcmb
+            2. Opay
+            3. Kuda
+            4. Vin Bank
+            4. Other Banks`);
+
+         let amount = +prompt(`Enter Amount:`);
+         alert(`You have Successfully sent N${amount}
+         Want to Perform another transaction?`);
+
+         //airtime option
+        } else if(action == 2) {
+            +prompt(`Select Network
+            1. Airtel
+            2. Mtn
+            3. Glo
+            4. 9Mobile
+            5. Other Networks`);
+
+            let airtimeNumber = +prompt(`Enter number`);
+
+            let airtimeAmount = +prompt(`Enter Amount`);
+
+            alert(`You have successfully recharged 0${airtimeNumber}
+            Check your Balance`);
+
+            //data
+        } else if(action == 3) {
+            +prompt(`Select Data Network
+            1. Airtel
+            2. Glo
+            3. Mtn
+            4. 9mobile`);
+
+            let airtimeNumber = +prompt(`Enter number`);
+
+            let airtimeAmount = +prompt(`Enter Data Amount`);
+
+            alert(`You have successfully subscribed 0${airtimeNumber}
+            Check your data balance`);
+
+            //loan
+        } else if(action == 4) {
+            alert(`Sorry ${name}!!
+            You're not eligible for this offer.
+            Contact the customer service!`);
+
+            //enquiry
+        } else if(action == 5) {
+            let enquiry = prompt(`Enter your message:`);
+            alert(`Your enquiry ...
+            ${enquiry}
+            Will be attended to within 24 hours, thank you for your patience!`);
+
+            //self service
+        } else if(action == 6) {
+            alert(`This service is currently unavailable!!`);
+
+        } else {
+            alert(`Select a valid option!`);
+        }
+
+
+    </script>
+</body>
+</html>
