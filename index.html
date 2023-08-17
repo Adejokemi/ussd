@@ -19,11 +19,12 @@
         let action = +prompt(`What would you love to do today?
         Please enter just number: 
         1. Transfer
-        2. Buy Airtime
-        3. Buy Data
-        4. Access Loan
-        5. Enquiry
-        6. Self Service`);
+        2. Balance
+        3. Buy Airtime
+        4. Buy Data
+        5. Access Loan
+        6. Enquiry
+        7. Self Service`);
 
         // transfer Option
         if(action == 1) {
@@ -39,8 +40,12 @@
          alert(`You have Successfully sent N${amount}
          Want to Perform another transaction?`);
 
-         //airtime option
+           //balance option
         } else if(action == 2) {
+            alert(`You account balance is #3,000,000.00`);
+
+         //airtime option
+        } else if(action == 3) {
             +prompt(`Select Network
             1. Airtel
             2. Mtn
@@ -56,7 +61,7 @@
             Check your Balance`);
 
             //data
-        } else if(action == 3) {
+        } else if(action == 4) {
             +prompt(`Select Data Network
             1. Airtel
             2. Glo
@@ -71,20 +76,20 @@
             Check your data balance`);
 
             //loan
-        } else if(action == 4) {
+        } else if(action == 5) {
             alert(`Sorry ${name}!!
             You're not eligible for this offer.
             Contact the customer service!`);
 
             //enquiry
-        } else if(action == 5) {
+        } else if(action == 6) {
             let enquiry = prompt(`Enter your message:`);
             alert(`Your enquiry ...
             ${enquiry}
             Will be attended to within 24 hours, thank you for your patience!`);
 
             //self service
-        } else if(action == 6) {
+        } else if(action == 7) {
             alert(`This service is currently unavailable!!`);
 
         } else {
