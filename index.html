@@ -104,9 +104,10 @@
         
                 case 7: // self service
                     alert(`This service is currently unavailable!!`);
+
+                    exitLoop = true;
                     break;
-
-
+        
                 default:
                     alert(`Select a valid option!`);
                     break;
@@ -116,6 +117,7 @@
                 break;
             }
         }
+
         
         </script>
         
